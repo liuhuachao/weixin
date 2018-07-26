@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3858C213-EFA8-44D8-A067-5350FE55D208}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Weixin</RootNamespace>
+    <AssemblyName>Weixin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net40\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\meizi635.jpg" />
+    <Content Include="Images\meizi636.jpg" />
+    <Content Include="Images\RedPackage\领取前背景.jpg" />
+    <Content Include="Images\RedPackage\领取后背景.jpg" />
+    <Content Include="Images\TB22a6wfVXXXXcdXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB22DT2fVXXXXXnXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB26bPTfVXXXXbvXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB27_uofVXXXXXGXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB28MbYfVXXXXaNXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB290YDfVXXXXbeXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2Ai0.fVXXXXaQXpXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2axl.fVXXXXaSXpXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2BXmkfVXXXXbUXXXXXXXXXXXX_!!25323709.png" />
+    <Content Include="Images\TB2CVSqfVXXXXazXXXXXXXXXXXX_!!25323709.png" />
+    <Content Include="Images\TB2cwamfVXXXXX8XXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2DrGEfVXXXXbeXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2eetQfVXXXXXxXpXXXXXXXXXX_!!817719264.jpeg" />
+    <Content Include="Images\TB2fu9ufVXXXXauXXXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2fynEfVXXXXaQXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2gUxKfVXXXXaGXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2iUOufVXXXXXyXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2KT9afVXXXXaCXpXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2mUrNfVXXXXcCXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2owuwfVXXXXXKXXXXXXXXXXXX_!!25323709.png" />
+    <Content Include="Images\TB2p.zNfVXXXXckXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2q8mpfVXXXXXuXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2qhaqfVXXXXaJXXXXXXXXXXXX_!!25323709.png" />
+    <Content Include="Images\TB2qOtWfVXXXXb5XXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2RMx_fVXXXXbeXpXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2rvedfVXXXXbCXXXXXXXXXXXX_!!817719264%281%29.jpg" />
+    <Content Include="Images\TB2rvedfVXXXXbCXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2rx80fVXXXXcdXpXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2rzmHfVXXXXafXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2S.isfVXXXXaoXXXXXXXXXXXX_!!25323709.png" />
+    <Content Include="Images\TB2s39pfVXXXXa8XXXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2Sp_BfVXXXXbdXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2TzLUfVXXXXa_XXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2uJmcfVXXXXXCXpXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2UmS3fVXXXXXLXXXXXXXXXXXX_!!817719264.png" />
+    <Content Include="Images\TB2uX2EfVXXXXa5XpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2vtiHfVXXXXafXpXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2ZZS3fVXXXXXYXXXXXXXXXXXX_!!25323709.jpg" />
+    <Content Include="Images\TB2_blZfVXXXXbxXXXXXXXXXXXX_!!817719264.jpg" />
+    <Content Include="Images\TB2_ieifVXXXXbVXXXXXXXXXXXX_!!25323709.png" />
+    <Content Include="Images\洛姐17.png" />
+    <Content Include="Images\洛姐23.png" />
+    <Content Include="JS\jquery.min.js" />
+    <Content Include="Web\AHmarried.aspx" />
+    <Content Include="Images\a0.jpg" />
+    <Content Include="Images\a1 .jpg" />
+    <Content Include="Images\a5.jpg" />
+    <Content Include="Images\ads.png" />
+    <Content Include="Images\c.png" />
+    <Content Include="Images\c0.jpg" />
+    <Content Include="Images\c2.jpg" />
+    <Content Include="Images\c6.jpg" />
+    <Content Include="Images\guide.png" />
+    <Content Include="Images\l.png" />
+    <Content Include="Images\link.png" />
+    <Content Include="Images\s1.jpg" />
+    <Content Include="Images\s10.jpg" />
+    <Content Include="Images\s11.jpg" />
+    <Content Include="Images\s2.jpg" />
+    <Content Include="Images\s3.jpg" />
+    <Content Include="Images\s4.jpg" />
+    <Content Include="Images\s5.jpg" />
+    <Content Include="Images\s6.jpg" />
+    <Content Include="Images\s7.jpg" />
+    <Content Include="Images\s8.jpg" />
+    <Content Include="Images\s9.jpg" />
+    <Content Include="Images\洛姐V5.png" />
+    <Content Include="Images\洛姐V5头像.jpg" />
+    <Content Include="JS\jweixin-1.0.0.js" />
+    <Content Include="JS\zepto.js" />
+    <Content Include="Css\style.css" />
+    <Content Include="Web\GetSuccess.aspx" />
+    <Content Include="Web\Jumppage.aspx" />
+    <Content Include="Web\langyabang.aspx" />
+    <Content Include="Web\Obviously.aspx" />
+    <Content Include="JS\test.js" />
+    <Content Include="Web\RedPackage.aspx" />
+    <Content Include="Web\huaqiangu.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\PaymentRecord.cs" />
+    <Compile Include="Code\DataTableHelper.cs" />
+    <Compile Include="Code\ISerialize.cs" />
+    <Compile Include="Code\LogHelper.cs" />
+    <Compile Include="Code\StringValidate.cs" />
+    <Compile Include="Code\XmlSerialize.cs" />
+    <Compile Include="DAL\PaymentRecord.cs" />
+    <Compile Include="DBUtility\CommandInfo.cs" />
+    <Compile Include="DBUtility\DbHelperExpand.cs" />
+    <Compile Include="DBUtility\DbHelperMySql.cs" />
+    <Compile Include="DBUtility\DbHelperSQL.cs" />
+    <Compile Include="DBUtility\SqlFilterHelper.cs" />
+    <Compile Include="Model\BaseReturn.cs" />
+    <Compile Include="Model\PaymentRecord.cs" />
+    <Compile Include="Model\SuccessReturn.cs" />
+    <Compile Include="Model\ErrorReturn.cs" />
+    <Compile Include="Model\WxOrder.cs" />
+    <Compile Include="Web\AHmarried.aspx.cs">
+      <DependentUpon>AHmarried.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\AHmarried.aspx.designer.cs">
+      <DependentUpon>AHmarried.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.ashx.cs">
+      <DependentUpon>default.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\JsonHelper.cs" />
+    <Compile Include="Web\GetSuccess.aspx.cs">
+      <DependentUpon>GetSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\GetSuccess.aspx.designer.cs">
+      <DependentUpon>GetSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Jumppage.aspx.cs">
+      <DependentUpon>Jumppage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Jumppage.aspx.designer.cs">
+      <DependentUpon>Jumppage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\langyabang.aspx.cs">
+      <DependentUpon>langyabang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\langyabang.aspx.designer.cs">
+      <DependentUpon>langyabang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\OAuth_User.cs" />
+    <Compile Include="Model\OAuth_Token.cs" />
+    <Compile Include="Web\Obviously.aspx.cs">
+      <DependentUpon>Obviously.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Obviously.aspx.designer.cs">
+      <DependentUpon>Obviously.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\RedPackage.aspx.cs">
+      <DependentUpon>RedPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\RedPackage.aspx.designer.cs">
+      <DependentUpon>RedPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Sign.cs" />
+    <Compile Include="Web\huaqiangu.aspx.cs">
+      <DependentUpon>huaqiangu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\huaqiangu.aspx.designer.cs">
+      <DependentUpon>huaqiangu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\weixin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.ashx" />
+    <Content Include="Images\0" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Release.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:43810/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
